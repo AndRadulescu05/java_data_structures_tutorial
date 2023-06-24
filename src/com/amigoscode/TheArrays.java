@@ -1,5 +1,6 @@
 package com.amigoscode;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
 
 
@@ -18,6 +19,27 @@ public class TheArrays {
         System.out.println(colors[4]);
 
         colors[2] = "yellow";
-        System.out.println(colors[2]);
+
+        System.out.println(Arrays.toString(colors));
+        System.out.println(           );
+
+        int[] numbers = {100, 200};
+
+        // loop crescator
+        for (int i = 0; i < colors.length; i++) {
+            System.out.println(colors[i]);
+        }
+        System.out.println(           );
+        //loop descrescator
+        for (int i = colors.length -1 ; i >= 0; i--) {
+            System.out.println(colors[i]);
+        }
+        for (String color : colors) {
+            System.out.println(color);
+        }
+        Arrays.stream(colors).forEach(System.out::println);
     }
 }
+
+
+
